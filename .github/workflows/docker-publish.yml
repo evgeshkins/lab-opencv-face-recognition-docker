@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/face-detection:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/lab-face-recognition:latest
