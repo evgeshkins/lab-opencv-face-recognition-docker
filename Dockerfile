@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 COPY face_recognition.py /app/
-COPY data/input.jpg /app/
+COPY data/input.jpg /app/data/
 
 RUN pip install opencv-python
 
