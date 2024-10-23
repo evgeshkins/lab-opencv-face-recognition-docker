@@ -7,6 +7,7 @@ RUN apt-get update && apt-get-install -y \
 
 WORKDIR /app
 
-COPY face_recognition.py input.jpg /app/
+COPY face_recognition.py /app/
+COPY data/input.jpg /app/
 
 CMD ["python3", "face_recognition.py"]
