@@ -10,4 +10,6 @@ WORKDIR /app
 COPY face_recognition.py /app/
 COPY data/input.jpg /app/
 
+RUN pip install opencv-python
+
 CMD ["python3", "face_recognition.py"]
